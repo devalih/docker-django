@@ -9,7 +9,7 @@ services:
     db:
         image: postgres:9.5.2
         volumes:
-            - /opt/starter/psql:/var/lib/postgresql/data/pgdata
+            - /tmp/starter/psql:/var/lib/postgresql/data/pgdata
         env_file:
             - ./config/environment/development.env
 
